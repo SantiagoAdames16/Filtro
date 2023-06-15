@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://images.vexels.com/media/users/3/146244/isolated/preview/77fd70114be4a7027595861839cbb099-coche-lavado-con-icono-de-manguera.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    <title>Campus Car Washing</title>
+
+</head>
+
+<body>
+    <!-- ============================== GESTION DE CLIENTES ============================== -->
+    <div class="gestion-clientes">
+        <h2>Gestion de clientes</h2>
+        <table id="tabla-clientes">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Placa</th>
+                <th>Tipo</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+                <th>Eliminar</th>
+                <th>Editar</th>
+            </tr>
+        </table>
+        <form class="formulario-clientes">
+            <label for="clienteID">ID: </label>
+            <input type="number" id="clienteID"><br>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre"><br>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido"><br>
+            <label for="placa">Placa: </label>
+            <input type="text" id="placa"><br>
+            <label for="tipo">Tipo de vehiculo: </label>
+            <input type="text" id="tipo"><br>
+            <label for="correo">Correo: </label>
+            <input type="email" id="correo"><br>
+            <label for="telefono">Telefono: </label>
+            <input type="number" id="telefono"><br>
+        </form>
+        <button class="registrar">Registrar</button>
+    </div>
+    
+    <div class="gestion-servicios">
+        <h2>Gestion de servicios</h2>
+        <table id="tabla-servicios">
+            <tr>
+                <th>ID</th>
+                <th>Servicio</th>
+                <th>Precio</th>
+                <th>Descripcion</th>
+                <th>Puntos</th>
+                <th>Eliminar</th>
+            </tr>
+        </table>
+        <form class="formulario-servicios">
+            <label for="servicioID">ID: </label>
+            <input type="number" id="servicioID"><br>
+            <label for="servicio">Servicio: </label>
+            <input type="text" id="servicio"><br>
+            <label for="precio">Precio: </label>
+            <input type="number" id="precio"><br>
+            <label for="descripcion">Descripcion: </label>
+            <input type="text" id="descripcion"><br>
+            <label for="puntos">Puntos: </label>
+            <input type="number" id="puntos"><br>
+        </form>
+        <button class="crear-servicio">Nuevo servicio</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
